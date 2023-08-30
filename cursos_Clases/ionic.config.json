@@ -1,0 +1,7 @@
+{
+  "name": "cursos_Clases",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
