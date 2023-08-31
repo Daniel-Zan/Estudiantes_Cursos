@@ -27,7 +27,7 @@ export class CoursesPage {
 
   filteredCursos: Curso[] = [];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   onSearch(event: any) {
     const searchTerm = event.target.value || '';
@@ -36,5 +36,7 @@ export class CoursesPage {
       curso.nombre.toLowerCase().includes(searchTerm.toLowerCase())
     );
   }
-  
+  navigateToStudentsPage() {
+    this.router.navigate(['/students']);
+}
 }
